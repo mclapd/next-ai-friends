@@ -101,19 +101,12 @@ export const CompanionForm = ({
         await axios.post("/api/companion", values);
       }
 
-      toast({
-        description: "Success.",
-        duration: 3000,
-      });
+      toast({ description: "Success" });
 
-      router.refresh();
       router.push("/");
+      router.refresh();
     } catch (error) {
-      toast({
-        variant: "destructive",
-        description: "Something went wrong.",
-        duration: 3000,
-      });
+      toast({ variant: "destructive", description: "Something went wrong" });
     }
   };
 
