@@ -1,5 +1,5 @@
 import prismadb from "@/lib/prismadb";
-import { CompanionForm } from "./_components/companion-form";
+import { CompanionForm } from "./components/companion-form";
 
 interface CompanionIdPageProps {
   params: {
