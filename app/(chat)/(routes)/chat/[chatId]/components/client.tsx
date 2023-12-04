@@ -18,7 +18,7 @@ interface ChatClientProps {
   };
 }
 
-export const ChatClient = ({ companion }: ChatMessageProps) => {
+export const ChatClient = ({ companion }: ChatClientProps) => {
   const router = useRouter();
   const [messages, setMessages] = useState<ChatMessageProps[]>(
     companion.messages
