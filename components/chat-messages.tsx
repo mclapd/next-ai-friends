@@ -46,12 +46,12 @@ export const ChatMessages = ({
       {messages.map((message) => (
         <ChatMessage
           key={message.content}
-          role={message.role}
+          src={companion.src}
           content={message.content}
-          src={message.src}
+          role={message.role}
         />
       ))}
-      {isLoading && <ChatMessage role="system" src={companion.src} isLoading />}
+      {isLoading && <ChatMessage src={companion.src} role="system" isLoading />}
       <div ref={scrollRef} />
     </div>
   );
